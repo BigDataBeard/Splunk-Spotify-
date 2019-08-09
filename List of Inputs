@@ -1,0 +1,44 @@
+https://spotipy.readthedocs.io/en/latest/#api-reference
+
+currently_playing(market=None)
+Get user’s currently playing track.
+Parameters:
+market - an ISO 3166-1 alpha-2 country code.
+
+
+current_playback(market=None)
+Get information about user’s current playback.
+Parameters:
+market - an ISO 3166-1 alpha-2 country code.
+
+
+current_user_followed_artists(limit=20, after=None)
+Gets a list of the artists followed by the current authorized user
+Parameters:
+limit - the number of tracks to return
+after - ghe last artist ID retrieved from the previous request
+
+current_user_playlists(limit=50, offset=0)
+Get current user playlists without required getting his profile
+Parameters:
+limit - the number of items to return
+offset - the index of the first item to return
+
+current_user_recently_played(limit=50)
+Get the current user’s recently played tracks
+Parameters:
+limit - the number of entities to return
+
+current_user_top_artists(limit=20, offset=0, time_range='medium_term')
+Get the current user’s top artists
+Parameters:
+limit - the number of entities to return
+offset - the index of the first entity to return
+time_range - Over what time frame are the affinities computed Valid-values: short_term, medium_term, long_term
+
+current_user_top_tracks(limit=20, offset=0, time_range='medium_term')
+Get the current user’s top tracks
+Parameters:
+limit - the number of entities to return
+offset - the index of the first entity to return
+time_range - Over what time frame are the affinities computed Valid-values: short_term, medium_term, long_term
